@@ -1,0 +1,133 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+html{
+  font-size:10px;
+  scroll-behavior:smooth;
+}
+@font-face {
+  font-family:'Bogle Black';
+  src: url(font/BOGLEBLACK.OTF);
+}
+@font-face {
+  font-family:'Bogle Regular';
+  src: url(font/BOGLEREGULAR.OTF);
+}
+:root{
+    --primary-color: #0071ce;
+    --secondary-color: #ffc220;
+    --footer-color: #004F9A;
+    --pure-white: #fff;
+    --pure-black: #000;
+    --hover-blue: #004F9A;
+    --dark-blue: #543DFF87;
+    --green: #2A8703;
+    --light-blue: #E6F1FC;
+    --light-grey: #74767cbb;
+    --padding-1: 1rem;
+    --padding-1-25: 1.25rem;
+    --padding-1-5: 1.5rem;
+    --padding-1-75: 1.75rem;
+    --padding-2: 2rem;
+    --padding-2-5: 2.5rem;
+    --font-size-1-2: 1.2rem;
+    --font-size-h4: 1.3rem;
+    --font-size-h3: 1.4rem;
+    --font-size-nav-items-p: 1.6rem;
+    --font-size-1-8: 1.8rem;
+    --font-size-h2: 2.4rem;
+    --font-size-2-8: 2.8rem;
+    --font-size-big: 5.6rem;
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+    }
+
+.font-normal{
+  font-weight:normal;
+}
+h2{
+  font-size:var(--font-size-h2);
+} 
+h3{
+  font-size:var(--font-size-h3);
+}
+h4{
+  font-size:var(--font-size-h4)
+}
+.common-css{
+  padding:0 3rem;
+}
+
+body{
+  background:var(--pure-white);
+  font-family:'Bogle Regular';
+  font-weight:var(--font-weight-bold);
+}
+.nav{
+  width:100%;
+  background:var(--primary-color);
+  position:fixed;
+  top:0;
+  z-index: 1;
+  color:var(--pure-white);
+}
+.nav-logo{
+  display:inline-block;
+  height:60px;
+  width:100px;
+  display:flex;
+  justify-content:center;
+  margin-left:5px;
+}
+.nav-logo img{
+  width:100px;
+}
+.nav-logo-m{
+  display:none !important;
+}
+.nav-list{
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.nav-list li{
+  display:flex;
+  align-items:center;
+  font-size:var(--font-size-nav-items-p);
+  color:var(--pure-white);
+  padding:0.5rem var(--padding-2);
+  border-radius:3rem;
+} 
+.nav-list box-icon{
+  margin-right:5px;
+}
+.nav-list li:not(.nav-search):hover{
+  background:var(--dark-blue);
+}
+.nav-list .nav-search{
+  flex-basis:40%;
+  position:relative;
+  padding: 0;
+}
+.nav-search input{
+  width:100%;
+  padding:var(--padding-1-25);
+  border-radius:3rem;
+  font-size:var(--font-size-nav-items-p);
+  border:0;
+  outline:0;
+}
+.nav-list .nav-search-logo{
+  position: absolute;
+  right:-0.5rem;
+  cursor:pointer;
+  background:var(--secondary-color);
+  border-radius:100%;
+  padding:0.50rem;
+}
+.nav-p{
+  font-size:1.2rem;
+}
