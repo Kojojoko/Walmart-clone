@@ -207,30 +207,113 @@ main{
   grid-template-columns:repeat(3,1fr);
   grid-template-rows:repeat(3,1fr);
   margin-top:12.5rem;
-  border:1px solid black;
   gap:1rem;
-  height:54vh;
+  height:49vh;
 }
 .section-1 img{
   border-radius:15px;
   width:100%;
   height:100%;
   object-fit:cover;
-  border:1px solid black;
 }
 .section-1-prod{
   position:relative;
 }
 .section-1 p{
   font-size:var(--font-size-2-8);
-  font-family:'Bogle Black'
+  font-family:'Bogle Black';
 }
 .section-1-prod-con{
   position: absolute;
   z-index:1;
-  top:2rem;
+  top:1.5rem;
   margin-left:1rem;
 }
 .con-1{
-  border:1px solid black;
+  top:0.5rem;
+}
+.con-2{
+  top:0.5rem;
+  text-align:center;
+}
+.section-1 a{
+  right:1rem;
+  font-size:var(--font-size-1-2);
+}
+.section-1 .con-7,.con-8{
+  top:0.5rem;
+}
+.con-8{
+  top:26.5rem;
+  width:150px;
+  text-align:center;
+}
+.con-6,.con-9,.con-3,con-4{
+  text-align: center;
+}
+.section-2{
+  margin-top:4rem;
+  padding:0 6rem 0 3rem;
+}
+.section-2 h3,.section-3 h3{
+  font-size:var(--font-size-h3);
+  color:green;
+}
+.section-2 h3 span{
+  color:var(--light-grey);
+  margin-left:0.8rem;
+}
+.section-2-main{
+  display:flex;
+  justify-content:space-between;
+  gap:6rem;
+}
+.section-2-main-deal{
+  position:relative;
+  max-width:17.5rem;
+  width:100%;
+  /*border:1px solid;*/
+}
+.section-2-main-deal box-icon{
+  position: absolute;
+  right:-3rem;
+  top:-1rem;
+}
+.section-2-main-deal img{
+  width:100%;
+}
+.air{
+  height:120px;
+}
+.section-2-main-deal h4{
+  font-size:var(--font-size-h4);
+}
+.section-2-main-deal button{
+  border:0;
+  border-radius:10%;
+  width:100px;
+  margin-top:1rem;
+}
+.section-2-main-deal:nth-child(1){
+  margin-top:2rem;
+}
+.section-2-main-deal:nth-child(3){
+  margin-top:2rem;
+}
+.section-2-main-deal:nth-child(4) {
+  margin-top: -1rem;
+}
+.section-2-main-deal:nth-child(5) {
+  margin-top: 0.8rem;
+}
+.section-2-main-deal:nth-child(6) {
+  margin-top: 2rem;
+}
+.section-2-main-deal:nth-child(1) box-icon{
+  top:-1rem;
+}
+.section-3-main{
+  margin-top:4rem;
+  display:flex;
+  padding-left:1rem;
 }
