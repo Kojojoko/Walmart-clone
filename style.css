@@ -70,7 +70,7 @@ body{
   background:var(--primary-color);
   position:fixed;
   top:0;
-  z-index: 1;
+  z-index: 2;
   color:var(--pure-white);
 }
 .nav-logo{
@@ -105,7 +105,7 @@ body{
   margin-right:5px;
 }
 .nav-list li:not(.nav-search):hover{
-  background:var(--dark-blue);
+  background:#4B95F0;
 }
 .nav-list .nav-search{
   flex-basis:40%;
@@ -130,4 +130,107 @@ body{
 }
 .nav-p{
   font-size:1.2rem;
+}
+.nav-items .nav-bar{
+    display: block;
+    text-align: center;
+    font-size: var(--font-size-1-2);
+    position: relative;
+}
+
+.nav-bar span{
+    position: absolute;
+    top: 1.5rem;
+    right: 4.9rem;
+    background-color: var(--secondary-color);
+    padding: 0.10rem 0.2rem;
+    color: var(--pure-black);
+    border-radius: 100%;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-1-2);
+    border: 0.1rem solid var(--pure-black);
+    height: 1.5rem;
+}
+
+.nav-divi{
+    width: 100%;
+    height: 0.05rem;
+    background-color: var(--pure-white);
+}
+.nav-items{
+  display:flex;
+  align-items:center;
+}
+.nav-divi-location{
+  display:flex;
+  font-size:0.5rem;
+  align-items:center;
+  flex-direction: row;
+
+}
+.nav-divi-location li{
+  font-size:1rem;
+}
+.nav-divi-cart-list{
+  display:flex;
+  padding:1px;
+  align-items:center;
+  justify-content:space-around;
+  margin:0;
+  list-style:none;
+  border-left:2px solid white;
+}
+.nav-divi-location li{
+  gap:1rem;
+}
+.nav-divi-cart-list li{
+  padding-left:2px;
+  text-decoration:none;
+  margin:auto;
+  flex-direction:column;
+  font-size: 1.1rem;
+  margin-right:10px
+}
+.nav-divi-cart-list a{
+  text-decoration:none;
+  color:white;
+}
+/*main css*/
+main{
+  max-width:1600px;
+  width:100%;
+  margin:0;
+  overflow-x:hidden;
+}
+.section-1{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  grid-template-rows:repeat(3,1fr);
+  margin-top:12.5rem;
+  border:1px solid black;
+  gap:1rem;
+  height:54vh;
+}
+.section-1 img{
+  border-radius:15px;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border:1px solid black;
+}
+.section-1-prod{
+  position:relative;
+}
+.section-1 p{
+  font-size:var(--font-size-2-8);
+  font-family:'Bogle Black'
+}
+.section-1-prod-con{
+  position: absolute;
+  z-index:1;
+  top:2rem;
+  margin-left:1rem;
+}
+.con-1{
+  border:1px solid black;
 }
